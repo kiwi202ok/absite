@@ -3,42 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uylar Ma’lumotlari</title>
+    <title>Uylar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<div class="app">
 
-    <h1>🏠 Uyni tanlang</h1>
-
-    <!-- Uylar -->
+    <!-- UY TANLASH -->
     <div id="houses" class="card">
-
+        <h1>🏠 Uyni tanlang</h1>
         <button onclick="openHouse('beltepa')">Bel-Tepa</button>
         <button onclick="openHouse('oxunboboyev')">Oxunboboyev</button>
     </div>
 
-    <!-- Xizmatlar -->
-    <div id="services" class="hidden card">
+    <!-- XIZMATLAR -->
+    <div id="services" class="card hidden">
         <h2 id="houseTitle"></h2>
 
         <button onclick="showInfo('wifi')">📶 WiFi</button>
         <button onclick="showInfo('gaz')">🔥 Gaz</button>
         <button onclick="showInfo('suv')">🚿 Issiq suv</button>
-        <button onclick="showInfo('kadaster')">📄 Uy kadaster</button>
+        <button onclick="showInfo('kadaster')">📄 Kadaster</button>
         <button onclick="showInfo('propiska')">📄 Propiska</button>
-        <button onclick="showInfo('Musor')">Musor</button>
+        <button onclick="showInfo('musor')">Musor</button>
 
-        <button class="back" onclick="goBack()">⬅ Orqaga</button>
+        <button class="secondary" onclick="goBack()">⬅ Orqaga</button>
     </div>
 
-    <!-- Ma'lumot -->
-    <div id="info" class="hidden card">
-    <div id="infoContent"></div>
-    <button class="secondary" onclick="closeInfo()">⬅ Orqaga</button>
-</div>
-
+    <!-- MA’LUMOT -->
+    <div id="info" class="card hidden">
+        <div id="infoContent"></div>
+        <button class="secondary" onclick="closeInfo()">⬅ Orqaga</button>
+    </div>
 
 </div>
 
