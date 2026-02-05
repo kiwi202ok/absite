@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uylar Ma’lumotlari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🏠 Uyni tanlang</h1>
+
+    <!-- Uylar -->
+    <div id="houses" class="card">
+
+        <button onclick="openHouse('beltepa')">Bel-Tepa</button>
+        <button onclick="openHouse('oxunboboyev')">Oxunboboyev</button>
+    </div>
+
+    <!-- Xizmatlar -->
+    <div id="services" class="hidden card">
+        <h2 id="houseTitle"></h2>
+
+        <button onclick="showInfo('wifi')">📶 WiFi</button>
+        <button onclick="showInfo('gaz')">🔥 Gaz</button>
+        <button onclick="showInfo('suv')">🚿 Issiq suv</button>
+        <button onclick="showInfo('kadaster')">📄 Uy kadaster</button>
+        <button onclick="showInfo('propiska')">📄 Propiska</button>
+        <button onclick="showInfo('Musor')">Musor</button>
+
+        <button class="back" onclick="goBack()">⬅ Orqaga</button>
+    </div>
+
+    <!-- Ma'lumot -->
+    <div id="info" class="hidden card">
+    <div id="infoContent"></div>
+    <button class="secondary" onclick="closeInfo()">⬅ Orqaga</button>
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
